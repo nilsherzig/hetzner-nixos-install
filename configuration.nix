@@ -62,5 +62,5 @@
       export NODE_PATH=~/.npm-packages/lib/node_modules
     '';
   };
-  service.k3s.enable = true;
+  services.k3s.enable = true;
 }
