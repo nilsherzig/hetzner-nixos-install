@@ -31,6 +31,7 @@
     kind
     zsh 
     starship
+    htop
   ];
   
   users.users.root= {
