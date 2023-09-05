@@ -11,9 +11,7 @@ curl https://raw.githubusercontent.com/elitak/nixos-infect/master/nixos-infect |
 Setup or update my NixOS configuration
 
 ```bash
-nix-shell -p git --run "git clone 'https://github.com/nilsherzig/hetzner-nixos-install'" "$HOME"
-ln -sf "$HOME/hetzner-nixos-install/configuration.nix" "/etc/nixos/configuration.nix"
-bash "$HOME/hetzner-nixos-install/update.sh"
+curl 'https://raw.githubusercontent.com/nilsherzig/hetzner-nixos-install/main/update.sh' | bash -x
 ```
 
 After that update by running the `update` command. 
