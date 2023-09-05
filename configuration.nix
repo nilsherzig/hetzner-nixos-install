@@ -32,6 +32,7 @@
     zsh 
     starship
     htop
+    k9s
   ];
   
   users.users.root= {
