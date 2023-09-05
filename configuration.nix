@@ -48,7 +48,7 @@
       ip = "ip --color=always"; # ip show colors 
       rclone = "rclone -P"; # always show rclone progress
       k = "kubectl";
-      update = "sudo nixos-rebuild switch";
+      update = "$HOME/hetzner-nixos-install/update.sh";
       lg = "lazygit";
       k9s = "k9s --logoless";
     };
