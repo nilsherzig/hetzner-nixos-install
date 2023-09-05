@@ -60,6 +60,7 @@
       export EDITOR=hx
       export PATH=~/.npm-packages/bin:$PATH
       export NODE_PATH=~/.npm-packages/lib/node_modules
+      export KUBECONFIG=/etc/rancher/k3s/k3s.yaml
     '';
   };
   services.k3s.enable = true;
