@@ -4,6 +4,11 @@
     /etc/nixos/hardware-configuration.nix
   ];
 
+  boot.kernel.sysctl = {
+    "fs.inotify.max_user_watches" = "1048576"; # 128 times the default 8192
+    "fs.inotify.max_user_instances" = "8192";
+  };
+
   boot.cleanTmpDir = true;
   zramSwap.enable = true;
   networking.hostName = "ubuntu-16gb-fsn1-1";
