@@ -11,7 +11,7 @@
 
   boot.cleanTmpDir = true;
   zramSwap.enable = true;
-  networking.hostName = "ubuntu-16gb-fsn1-1";
+  networking.hostName = "sol";
   networking.domain = "";
   services.openssh.enable = true;
   users.users.root.openssh.authorizedKeys.keys = [
@@ -71,5 +71,5 @@
       # export KUBECONFIG=/etc/rancher/k3s/k3s.yaml
     '';
   };
-  # services.k3s.enable = true;
+  services.k3s.enable = true;
 }
